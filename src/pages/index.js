@@ -50,15 +50,15 @@ const HomePage = () => {
           />
           <Perk
             img={perk3Img}
-            alt="The EinsteinDB implementation supports read-write transactions, snapshot transactions (predeclared snapshotisolation transactions), and snapshot reads. "
+            alt="The EinsteinDB implementation of BerkeleyDB supports read-write transactions, snapshot transactions (predeclared snapshot isolation transactions), and snapshot reads. "
             title="HTAP database platform that enables real-time situation awareness and decision making on live transactional data and eliminates friction between IT and business goals."
             content="MilevaDB automatically shards your data so you don’t have to do it manually. You can simply add new nodes to scale horizontally and elastically to meet your business growth."
           />
         </div>
       </TextBlockImg>
       <Packages
-        title="Our Packages"
-        para="Choose the perfect solution for you. With benefits to suit all budgets Startup can offer amazing value and expert advice"
+        title="EinsteinDB Suite"
+        para="400+ TB of transactional production data in a single MilevaDB cluster"
       >
         <IconContext.Provider
           value={{
@@ -70,20 +70,18 @@ const HomePage = () => {
           <Package title="Standard">
             <ul>
               <li>
-                <MdDone />1 User
+                <MdDone />1024 GiB	
               </li>
               <li>
                 <MdDone />
-                1GB Storage
+          16 vCPU              </li>
+              <li className="linethrough">
+                <MdClear color="red" />
+              $ 2.000 /hr
               </li>
               <li className="linethrough">
                 <MdClear color="red" />
-                Dedicated Advisor
-              </li>
-              <li className="linethrough">
-                <MdClear color="red" />
-                24/7 Support
-              </li>
+    pessimistic and optimistic transaction model           </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
               <Button label="I want this" cta="I want this!" />
@@ -93,19 +91,17 @@ const HomePage = () => {
             <ul>
               <li>
                 <MdDone />
-                24/7 Support
+compare-and-swap (CAS) is an atomic instruction to achieve synchronization between multiple threads              </li>
+              <li>
+                <MdDone />
+MilevaDB is an open-source, distributed Prolog and sSQL database, and EinsteinDB is its storage layer.              </li>
+              <li>
+                <MdDone />
+           48GB+ Storage
               </li>
               <li>
                 <MdDone />
-                Dedicated Advisor
-              </li>
-              <li>
-                <MdDone />
-                Unlimited Storage
-              </li>
-              <li>
-                <MdDone />
-                Unlimited Users
+                ransactions in MilevaDB use two-phase commit (2PC) that includes the Prewrite phase and the Commit phase .
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
@@ -116,19 +112,19 @@ const HomePage = () => {
             <ul>
               <li>
                 <MdDone />
-                10 Users
+        S3-Compatible Storage Using BR
               </li>
               <li>
                 <MdDone />
-                500GB Storage
+                strongest block ciphers available to encrypt your data, 256-bit Advanced Encryption Standard (AES-256).
               </li>
               <li>
                 <MdDone />
-                Advice Support
+              MilevaDB supports the JSON (JavaScript Object Notation) data type, which is useful for storing semi-structured data. 
               </li>
               <li className="linethrough">
                 <MdClear color="red" />
-                Dedicated Advisor
+                A view acts as a virtual table, whose schema is defined by the SELECT statement that creates the view. 
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
