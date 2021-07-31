@@ -23,7 +23,7 @@ const HomePage = () => {
       <TextBlock
         id="about"
         title="EinsteinDB introduces the InterLock that extends
-a pessimistic RW-Mutex with support for optimistic locking"
+a pessimistic RW-Mutex with support for optimistic locking by an embedding of merkle graphs."
         paragraph=" combining all fields of both locks
 into a single 64-bit word to keep
 the overhead and latency of locking minimal. "
