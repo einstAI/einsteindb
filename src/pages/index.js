@@ -31,29 +31,28 @@ const HomePage = () => {
       </TextBlock>
       <TextBlockImg
         id="perks"
-        title="We have the tools to help you suceed"
-        subtitle="Startup is perfect for helping to to start and grow your business. As
-          you begin to gain new clients and expand you will see the benefits of
-          a super-fast Gatsby website"
+        title="World's First Relativistic Linearizable PR2SQL Hybrid Online and Analytical Procwessing Engine"
+        subtitle="Exhaustive Causal Consistent network simulation combined with lineage driven concurrency testing of lock-free algorithm interleavings, 
+        model-based testing in combination with fault injection, leaderless byzantine lamport invariant consensus"
       >
         <div className="flex-container trio-block">
           <Perk
             img={perk1Img}
-            alt="Super fast speed increases"
-            title="Speedy"
-            content="Super-fast response times ensure your business is not affected"
+            alt=" cloud-native stochastic semi-relational database compatible with MySQL, InnoDB, MariaDB, PostgreSQL, SQLite and Oracle"
+            title="enterprise database"
+            content="EinsteinDB’s Causet Secondary Index averages a response time less than 1 ms (P99=10 ms). EinsteinDB is a multi-version, globally-distributed, leader-less, and synchronously-replicated database written with rust, golang, haskell, and C"
           />
           <Perk
             img={perk2Img}
-            alt="Great savings to be made"
-            title="Affordable"
+            alt="Our implementation of Paxos is pipelined between HoneyBadger BFT and Byzantine Raft, so as to improve EinsteinDB's throughput in the presence of WAN latencies."
+            title="With an improved database kernelm, EinsteinDB, supports physical replication, RDMA protocol, and shared distributed storage, which greatly improves performance."
             content="A choice of packages to suit every business type and size"
           />
           <Perk
             img={perk3Img}
-            alt="Super fast speed increases"
-            title="Friendly"
-            content="Advisors who are available 24/7, all with exprt knowledge"
+            alt="The EinsteinDB implementation supports read-write transactions, snapshot transactions (predeclared snapshotisolation transactions), and snapshot reads. "
+            title="HTAP database platform that enables real-time situation awareness and decision making on live transactional data and eliminates friction between IT and business goals."
+            content="MilevaDB automatically shards your data so you don’t have to do it manually. You can simply add new nodes to scale horizontally and elastically to meet your business growth."
           />
         </div>
       </TextBlockImg>
