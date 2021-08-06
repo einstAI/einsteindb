@@ -46,7 +46,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            It's time to make your business <span>stand out</span>
+        EinsteinDB is a Hybrid memory system consisting of DRAM and Non-Volatile Memory aimed at persisting data fast.<span> Using Query Optimization, Cardinality Estimation, and Learned Indices via einst.ai </span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -54,11 +54,10 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Startup is here to help you achieve your business and personal
-            goals, all through a stylish theme
+
           </motion.p>
           <Link to="about" smooth={true} duration={500}>
-            <span className="sr-only">Jump to about</span>
+            <span className="sr-only">domain-agnostic schema-free</span>
             <Button
               cta="Learn More"
               label="Banner Learn More"
