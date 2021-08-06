@@ -46,7 +46,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-        EinsteinDB is a Hybrid memory system consisting of DRAM and Non-Volatile Memory aimed at persisting data fast.<span> Using Query Optimization, Cardinality Estimation, and Learned Indices via einst.ai </span>
+        EinsteinDB is a Hybrid memory system consisting of DRAM and Non-Volatile Memory aimed at persist data fast.<span> EinsteinDB is a set of immutable atomic facts called causets.(not key-value, not document-oriented) but in fact a Stateless Hash Tree (Hybrid B+Map)  </span>
           </motion.h1>
           <motion.p
             initial="hidden"
