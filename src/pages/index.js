@@ -22,7 +22,7 @@ const HomePage = () => {
       <Banner />
       <TextBlock
         id="about"
-        title="EinsteinDB allows you to write and read data without locking, and without worrying about what other clients are doing. It is fast, and does not need to use a network to work"
+        title="EinsteinDB is a Neuromorphic Hybrid HTAP that allows you to write and read data without locking, and without worrying about what other clients are doing. It is fast, and does not need to use a network to work"
         paragraph="EinsteinDB and MilevaDB use different types of index to make it faster to find things"
       >
         <Link to="perks" smooth={true} duration={500}>
@@ -55,8 +55,8 @@ const HomePage = () => {
         </div>
       </TextBlockImg>
       <Packages
-        title="Californium"
-        para="400+ TB of transactional production data in a single MilevaDB cluster"
+        title="Moscovium"
+        para="$0.001 GBPS without EinstA.I powered by GPT3"
       >
         <IconContext.Provider
           value={{
@@ -65,10 +65,11 @@ const HomePage = () => {
             style: { verticalAlign: "middle", marginRight: "5px" },
           }}
         >
-          <Package title="Standard">
+          <Package title="Californium">
+            para="$0.01 GBPS with EinstA.I powered by GPT3"
             <ul>
               <li>
-                <MdDone />EinsteinDB's Moscovium offers a self-managed 1024 GiB Arm-based Arm-based CPU which is 5% to 18% faster than the usual x86-based CPU offers out there. EinsteinDB's Californium base model does not include OpenAI's GPT3-powered EinstAI's Automata.
+                <MdDone />EinsteinDB's Californium offers a self-managed 1024 GiB Arm-based Arm-based CPU which is 5% to 18% faster than the usual x86-based CPU offers out there. EinsteinDB's Moscovium base model does not include OpenAI's GPT3-powered EinstAI's Automata.
               </li>
               <li>
                 <MdDone />Californium with EinstAI is $0.01 Gbps via EKS with Graviton2 (Arm) offering and also on the Intel Xeon Platinum 8000 series (x86) across all Google Cloud, Azure, and Alibaba
@@ -111,21 +112,19 @@ MilevaDB is an open-source distributed Prolog-inspired AllegroSQL database. Mile
             <ul>
               <li>
                 <MdDone />
-        S3-Compatible Storage Using BR
+    MilevaDB, through FIDel and EinsteinDB's offering of gRPC compatible protobuffers, uses cost as feedback to train the model and then switches to latency memristors (context switches) for fine-tuning throughput guarantees in read heavy workloads.
+              </li>
+              <li>Instead of clustering the whole database, EinsteinDB aims to cluster only the "hot" portions of the database by relying on the admission policy of the existing database cache. Second. We've developed a novel self-tuning locality-sensitive hash (LSH) function, namely, Tunable-LSH to decide in constant-time where in the storage system to place a record. Tunable
+                <MdDone />
+               
               </li>
               <li>
                 <MdDone />
-                strongest block ciphers available to encrypt your data, 256-bit Advanced Encryption Standard (AES-256).
-              </li>
-              <li>
-                <MdDone />
-              MilevaDB supports the JSON (JavaScript Object Notation) data type, which is useful for storing semi-structured data. We first use cost as feedback to train the model and then switch to latency as feedback for fine-tuning. 
-              Different from that only uses latency as feedback, we treat these two feedback as two separate tasks but sharing one common representation, through multi-task learning.
+              Instead of putting everything in one big pile, EinsteinDB is going to put the hot stuff in a special pile. First, we have a special self-tuning magic box that can make decisions about where to put things in the storage system. MilevaDB and EinsteinDB can store semi-structured data using JSON-LD. We first use cost as feedback to train the model and then switch to latency as feedback for fine-tuning. 
               </li>
               <li className="linethrough">
                 <MdClear color="red" />
-                A view acts as a virtual table, whose schema is defined by the SELECT statement that creates the view. 
-                 By doing so, the model can learn cost and latency together, by setting the objective loss function as a weighted sum of these two problems.
+                EinsteinDB's Materialized views (MVs) can significantly optimize the query processing in MilevaDB. However, it is hard to generate MVs for ordinary users because it relies on background knowledge, and existing methods rely on DBAs to generate and maintain MVs. However, DBAs cannot handle large-scale databases, especially cloud databases that have millions of database instances and support millions of users. Thus it calls for an autonomous MV management system. EinstAI is an autonomous materialized view management system which analyzes query workloads, estimates the costs and benefits of materializing queries as views, and selects MVs to maximize the benefit within a space budget.
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
@@ -136,9 +135,10 @@ MilevaDB is an open-source distributed Prolog-inspired AllegroSQL database. Mile
       </Packages>
       <Contact
         id="contact"
-        title="the new standard for processing data and responding to an event is now under 250 milliseconds."
-        subtitle=" That means that the decisioning part must happen in single-digit milliseconds (<10), without compromising data accuracy. 
-        Every second counts when you're looking to get your new business started. Drop Startup a message and one of our representatives will be in contact"
+        title="EinsteinDB is faster than MonetDB and LogicBlox. 
+        EinsteinDB is faster because it uses deep neural networks to learn how to make the database faster."
+        subtitle="EinsteinDB learns how to make the database faster by  looking at how people use it.
+          And it gets better over time, because EinsteinDB learns from the data it sees."
       />
     </>
   )
