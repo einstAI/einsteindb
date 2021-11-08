@@ -22,8 +22,8 @@ const HomePage = () => {
       <Banner />
       <TextBlock
         id="about"
-        title="EinsteinDB allows only for an open world, Conflict-free, embeddedly consistent, schema-free persistence layer for both reads and writes independently of network conditions. A Thread-safe append-only with internal copy-on-write behavior that enables the fastest possible lock-free lookups via sRDMA"
-        paragraph="supports rich key-value operations efficiently, EinsteinDB and MilevaDB exploit the distinct merits of hash indices and B+-Tree indices."
+        title="EinsteinDB allows you to write and read data without locking, and without worrying about what other clients are doing. It is fast, and does not need to use a network to work"
+        paragraph="EinsteinDB and MilevaDB use different types of index to make it faster to find things"
       >
         <Link to="perks" smooth={true} duration={500}>
           <Button label="Tell Me More" cta="Tell Me More!" />
@@ -31,31 +31,31 @@ const HomePage = () => {
       </TextBlock>
       <TextBlockImg
         id="perks"
-        title="the strictest concurrency-control guarantees for transactions. EinsteinDB meets the requirements for large storage capacity, low cost, and read and write capabilities."
-        subtitle="Exhaustive Causal Consistent network simulation, lineage driven concurrency testing of lock-free algorithm interleavings, model-based testing in combination with fault injection, and leaderless byzantine lamport invariant consensus, clearly separates the production cycle at EinsteinDB and MilevaDB from the rest."
+        title="EinsteinDB is a distributed database that is schema-free, and offers the strictest concurrency control for Repeatable Reads and Merge-Commit Leaderless transactions."
+        subtitle="BerolinaSQL is an open source SQL dialect for NoSQL databases like Apache Cassandra, MongoDB, HBase and others. It was created by WHTCORPS Inc., which provides development tools for building scalable web services in Java, Scala and Clojure using its technology stack of Apache Spark on top of Mesosphere DC/OS or Kubernetes on top of Google Container Engine (GKE). "
       >
         <div className="flex-container trio-block">
           <Perk
             img={perk1Img}
-            alt="A scalable, multiversion, globally distributed, and synchronously replicated relativistic database. Distribute at a global scale without timezones -- EinsteinDB uses a novel Hybrid Logic Clock based off of Petri Nets" 
-            title="To support rich key-value operations efficiently, EinsteinDB exploits the distinct merits of a learned index and B+-Tree index. EinsteinDB builds and persists the hash index in NVM to retain its inherent ability of fast index searching."
+            alt="A database that is distributed without time zones, can be scaled to a global scale, and has a synchronous replication. The EinsteinDB team at Whtcorps claims to have accomplished all of this using Petri nets." 
+            title="To support rich key-value operations efficiently, EinsteinDB uses a special kind of index. It builds the index in memory and it is very fast to use."
           />
           <Perk
             img={perk2Img}
-            alt="MilevaDB is EinsteinDB's second half, another open-source, cloud-native distributed SQL database that is ACID-compliant and strongly consistent. Distributed SQL databases like MilevaDB aim to combine the best features of both Relational Database Management Systems (RDBMSs) and NoSQL databases to create a truly cloud-native database. "
-            content=" Kubernetes provides an advanced framework to run distributed systems such as MilevaDB and EinsteinDB with high resilience for mission critical business functions. "
+            alt="Distributed SQL databases like MilevaDB aim to combine the best features of both Relational Database Management Systems (RDBMSs) and NoSQL databases to create a truly cloud-native database via EinsteinDB's persistence layer."
+            content="Kubernetes is a system that makes sure MilevaDB and EinsteinDB keep running, even if something bad happens."
       
           />
           <Perk
             img={perk3Img}
-            alt="Deploy MilevaDB in Kubernetes. As a container orchestration platform, Kubernetes enables businesses to simplify deployment, streamline workload management, and automate operation and maintenance by utilizing its auto scaling and auto failover capabilities."
-            title="EinsteinDB, MilevaDB's persistence key-value/tuplestore HTAP database platform, enables real-time situation awareness, decision making on live transactional data via einst.ai,  and eliminates friction between IT and business goals with stochastic foraging load balancing automata."
-            content="MilevaDB automatically shards your data so you don’t have to do it manually. You can simply add new nodes to scale horizntally and elastically to meet your business growth."
+            alt="Fidel allows you to use the same codebase across all of your applications by using a single application. Fidel can auto scale and auto failover your applications to a different host, allowing you to reduce the time between redeployments and increase uptime. "
+            title="EinsteinDB provides for a production-grade, real-time situation awareness, decision making on live transactional data aimed at eliminating friction between IT and business goals with stochastic foraging load balancing automata."
+            content="automatically shard your data so you don’t have to do it manually. You can simply add new nodes to scale horizontally and elastically."
           />
         </div>
       </TextBlockImg>
       <Packages
-        title="EinsteinDB Californium"
+        title="Californium"
         para="400+ TB of transactional production data in a single MilevaDB cluster"
       >
         <IconContext.Provider
@@ -68,19 +68,19 @@ const HomePage = () => {
           <Package title="Standard">
             <ul>
               <li>
-                <MdDone />1024 GiB	Arm-based system and the x86-based system show an average difference around 5% to 18% with better performance for Graviton2 Arm running EinsteinDB Californium
+                <MdDone />EinsteinDB's Moscovium offers a self-managed 1024 GiB Arm-based Arm-based CPU which is 5% to 18% faster than the usual x86-based CPU offers out there. EinsteinDB's Californium base model does not include OpenAI's GPT3-powered EinstAI's Automata.
               </li>
               <li>
-                <MdDone />
-           $0.01 Gbps EKS with Graviton2 (Arm) and on the Intel Xeon Platinum 8000 series (x86).            
+                <MdDone />Californium with EinstAI is $0.01 Gbps via EKS with Graviton2 (Arm) offering and also on the Intel Xeon Platinum 8000 series (x86) across all Google Cloud, Azure, and Alibaba
            </li>
               <li className="linethrough">
                 <MdClear color="red" />
-               $0.001 Gbps EinsteinDB provides both transactional (Txn) API and non-transactional (Tuplestore) API.
+              Moscovium is a base offering, without EinstAI, of $0.001 Gbps with both transactional (Txn) and non-transactional (Tuplestore) APIs. 
               </li>
               <li className="linethrough">
                 <MdClear color="red" />
-For single-threaded performance, EinsteinDB outperforms the state-of-the-art NVM-based key-value stores by reducing latency up to 86.6%, and for multi-threaded performance, EinsteinDB increases the throughput by up to 6.4x under YCSB workloads.  </li>
+An embedded columnar in-memory analytics layer designed for large scale data processing sitting on a key-value store designed for high performance, small footprint applications.
+EinsteinDB and MilevaDB together reduce workload latency up to 86.6%, and for multi-threaded performance, EinsteinDB increases the throughput by up to 6.4 times under YCSB workloads</li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
               <Button label="I want this" cta="I want this!" />
@@ -90,17 +90,17 @@ For single-threaded performance, EinsteinDB outperforms the state-of-the-art NVM
             <ul>
               <li>
                 <MdDone />
-compare-and-swap (CAS) is an atomic instruction to achieve synchronization between multiple threads              </li>
+Features a novel compare-and-swap (CAS) atomic instruction to achieve synchronization between multiple threads. </li>
               <li>
                 <MdDone />
-MilevaDB is an open-source, distributed Prolog and sSQL database, and EinsteinDB is its storage layer.              </li>
+MilevaDB is an open-source distributed Prolog-inspired AllegroSQL database. MilevaDB's storage layer is EinteinDB. BerolinaSQL is a MySQL compatible module that can be used with Postgres, MariaDB, and Oracle Tables with added Secondary Indices. </li>
               <li>
                 <MdDone />
-           48GB+ Storage
+           $0.001 Moscovium Cloud-Native offering
               </li>
               <li>
                 <MdDone />
-                Transactions in MilevaDB use two-phase commit (2PC) that includes the Prewrite phase and the Commit phase .
+      $0.01 is Californium, Next-Gen HTAP EinsteinDB offering with OpenAI's General Intelligence Automaton GPT3, GPT4, CLIP, and BERT.
               </li>
             </ul>
             <Link to="contact" smooth={true} duration={500}>
